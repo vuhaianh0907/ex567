@@ -1,7 +1,7 @@
-import React, { Component }  from "react"
+import React  from 'react'
 import { Players } from "./shared/ListOfPlayers"
-export default class player extends Component{
-    render() {
+export default function player(){
+
         return(
            
             <div className='container'>
@@ -19,4 +19,3 @@ export default class player extends Component{
 
         )
     }
-}
