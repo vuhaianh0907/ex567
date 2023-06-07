@@ -1,16 +1,15 @@
 
 import './App.css';
 import Navigation from './components/Navigation';
-import Main from './components/Main';
 import Footer from './components/Footer'
+import Players from './Players';
 function App() {
   return (
     <div className="App-header">
       <Navigation/>
-      <Main/>
+      <Players/>
       <Footer/>
     </div>
   );
 }
-
 export default App;

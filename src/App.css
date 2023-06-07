@@ -42,7 +42,7 @@ a, a:hover, a:visited, a:active {
   /* margin: 0px 20px; */
   padding: 15px 15px ;
   text-decoration: none;
-  /* color: #fff; */
+  color: #fff;
 }
 /* .nav-list--element  .active{
   background-color: rgba(255, 255, 0, 0.219);
