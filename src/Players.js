@@ -1,7 +1,8 @@
-import React, { Component }  from "react"
+import React  from 'react'
 import { Players } from "./shared/ListOfPlayers"
-export default class player extends Component{
-    render() {
+import { useState } from 'react'
+export default function Players(){
+  const [player, setPlayer] = useState([])
         return(
            
             <div className='container'>
@@ -11,7 +12,9 @@ export default class player extends Component{
            <img src={player.img} />
              <h3> {player.name} </h3>
              <p className='title'> {player.club} </p>
-             <p><button className='btn'>Detail</button></p>
+             <p><button onClick={()=>{setPlayer(player)}} className='btn' >
+            <a href='#popup1' id='openPopUp'>Detail</a>
+            </button ></p>
            </div>
          </div>  
             ))}
@@ -19,4 +22,3 @@ export default class player extends Component{
 
         )
     }
-}
